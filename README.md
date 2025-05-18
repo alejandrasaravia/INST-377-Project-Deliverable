@@ -10,7 +10,7 @@ Target Browsers:
 The target browsers for our web application include both iOS and Android platforms. It will be accessible through all major mobile web browsers such as Safari (for iOS) and Google Chrome or Firefox (for Android). 
 
 Developer Manual 
-This manual is intended to explain to future delvopers how to install this web application, how to run the application on a server, running test. 
+This manual is intended to explain to future developers how to install this web application, run it on a server, and run tests. 
 
 System Requirments 
 
@@ -20,18 +20,18 @@ Before you begin, make sure you have the following installed on your machine:
 - npm (Node Package Manager)
 -  A terminal 
 - A GitHub account and access to the repository
-- A IOS or Andriod device
+- An iOS or Android device
 
 Installation 
 
 Cloning the Repository
-1. Clone the project respioty to your local machine :
+1. Clone the project repository to your local machine :
    1.1 By opening your terminal and running this command
     git clone https://github.com/yourusername/atlantatransit.git
 2. Install dependencies
   2.2 Navigate to the server with the command
    cd server
-  2. Install npm package with the command :
+  2. Install the npm package with the command :
     npm install
 3. This will install the dependencies such as:
   3.1 express
@@ -39,4 +39,33 @@ Cloning the Repository
 
 Running the Application 
 
+Running Test 
+
+
+
+API 
+1. GET /api/routes
+Returns a list of all bus routes offered in Georgia.
+
+3. GET /api/routes/:id/livestatus
+Displays live tracking to determine real-time arrival and wait time updates.
+
+4. POST /api/trip
+Returns the fastest suggested bus route and transfer points. 
+
+5. POST /api/favorites
+Saves routes to a user's favorites folder.
+
+6. GET /api/alerts/:routeId
+Provides live alerts on delays
+
+Known Bugs:
+- Missing Data: Occasionally, bus routes do not show any statuses and instead show incomplete data. 
+- Trip Accuracy: The trip planner feature sometimes does not return the best route, and its inaccuracy can cause unnecessary delays.
+
+Roadmap for Future Development:
+- Fix missing data
+- Improve the trip planner's accuracy
+- Implement user login
+- Extend application beyond Georgia, providing live transit updates in every state in the United States 
 
