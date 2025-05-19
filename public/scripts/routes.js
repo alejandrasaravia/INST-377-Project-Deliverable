@@ -1,8 +1,8 @@
-// scripts/routes.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
   loadRoutes();
-  loadMap(); // this is optional, depending on whether you're using Leaflet
+  loadMap();
 });
 
   
@@ -29,6 +29,6 @@ async function loadRoutes() {
   function loadMap() {
     const map = L.map("map").setView([33.7490, -84.3880], 11);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-    // Add live bus markers here later
+
   }
   

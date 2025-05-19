@@ -4,15 +4,14 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 
-const app = express(); // ✅ This must come BEFORE you use `app.get(...)`
-
+const app = express(); 
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// ✅ Define this AFTER you create `app`
+
 app.get('/api/marta', async (req, res) => {
   try {
     const response = await axios.get(
@@ -25,7 +24,7 @@ app.get('/api/marta', async (req, res) => {
   }
 });
 
-// Serve index.html fallback
+
 app.get('/', (req, res) => {
   const indexPath = path.join(__dirname, 'public', 'index.html');
   if (fs.existsSync(indexPath)) {
@@ -35,7 +34,7 @@ app.get('/', (req, res) => {
   }
 });
 
-// Start the server
+
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });

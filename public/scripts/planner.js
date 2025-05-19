@@ -1,4 +1,4 @@
-// scripts/planner.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("tripForm");
@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>Fetching best routes... (Trip planner logic will go here)</p>
     `;
   
-    // TODO: Add API logic here to fetch route connections and arrival times
+
   }
   
