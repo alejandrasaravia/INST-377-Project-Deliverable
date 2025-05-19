@@ -25,22 +25,34 @@ Before you begin, make sure you have the following installed on your machine:
 Installation 
 
 Cloning the Repository
-1. Clone the project repository to your local machine :
+1. Clone the project repository to your local machine:
+   
    1.1 By opening your terminal and running this command
-    git clone https://github.com/yourusername/atlantatransit.git
-2. Install dependencies
-  2.2 Navigate to the server with the command
-   cd server
-  2. Install the npm package with the command :
-    npm install
+   
+   git clone https://github.com/yourusername/atlantatransit.git
+   
+3. Install dependencies
+   
+   2.1 Navigate to the server with the command :
+
+      cd server
+   
+     2.2 Install the npm package with the command :
+  
+       npm install
+    
 3. This will install the dependencies such as:
-  3.1 express
-  3.2 supabase
+   
+     3.1 express
+  
+     3.2 supabase
 
 Running the Application 
 
 After installation is complete, you can start the application
+
 1. run
+   
    npm start
 
 Running Test 
