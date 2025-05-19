@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trip Planner</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/planner.js"></script>  
+</head>
+<body>
+  <header>
+    <h1>Trip Planner</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="routes.html">Routes</a>
+      <a href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <div class="main-container">  
+    <section>
+      <h2>Plan Your Trip</h2>
+      <form id="tripForm">
+        <label for="start">Start Location:</label>
+        <input type="text" id="start" required />
+        <label for="end">End Location:</label>
+        <input type="text" id="end" required />
+        <button type="submit">Plan Trip</button>
+      </form>
+    </section>
+
+    <section id="tripResults">
+      <h2>Suggested Routes</h2>
+      <div id="resultsContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Atlanta Transit Tracker</p>
+  </footer>
+
+  <script src="planner.js"></script>
+
+</body>
+</html>

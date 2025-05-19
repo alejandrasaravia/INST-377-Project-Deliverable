@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Route Details</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/routes.js"></script>  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Route Details</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="routes.html">Routes</a>
+      <a href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <div class="main-container">  
+    <section>
+      <h2>Available Bus Routes</h2>
+      <ul id="routeList"></ul>
+    </section>
+
+    <section>
+      <h2>Route Stops</h2>
+      <ul id="stopsList"></ul>
+    </section>
+
+    <section>
+      <h2>Live Bus Map</h2>
+      <div id="map" style="height: 400px;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Atlanta Transit Tracker</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="scripts/routes.js"></script>
+
+
+</body>
+</html>

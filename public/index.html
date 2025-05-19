@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlanta Transit Tracker</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Atlanta Transit Tracker</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="routes.html">Routes</a>
+      <a href="planner.html">Trip Planner</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <div class="main-container">  
+      <!-- Your intro, search, real-time status, and saved routes go here -->
+      <section class="intro">
+        <h2>Welcome to Atlanta Transit Tracker</h2>
+        <p>
+          This website helps you navigate Atlanta’s public bus system in real-time. 
+          Search bus routes, track arrivals, view detailed route info, and plan your trips 
+          using the latest transit data. Whether you're commuting or exploring, 
+          we've got your route covered!
+        </p>
+        <img src="https://www.bcdtravel.com/wp-content/uploads/Blog_AtlantaCityGuide_May2024.jpg" alt="City Bus in Atlanta" class="intro-img" />
+      </section>
+  
+      <section class="search-section">
+        <h2>Search for a Bus Route</h2>
+        <input type="text" id="searchBar" placeholder="e.g., 2" />
+        <button id="searchBtn">Search</button>
+      </section>
+  
+      <section id="realtime-status">
+        <h2>Real-Time Bus Status</h2>
+        <div id="statusContainer"></div>
+      </section>
+  
+      <section id="saved-routes">
+        <h2>Saved Routes</h2>
+        <ul id="savedRoutesList"></ul>
+      </section>
+    </div>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Atlanta Transit Tracker</p>
+  </footer>
+
+  <!-- ✅ Link to JS at the end -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
