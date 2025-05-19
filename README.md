@@ -39,11 +39,19 @@ Cloning the Repository
 
 Running the Application 
 
+After installation is complete, you can start the application
+1. run
+   npm start
+
 Running Test 
+Search and Display: 
+
+To test a few features, try searching for a transit line. If everything is working correctly, it should display the correct line search. 
+Also, test the map to see if you can minimize or maximize it. It should display an accurate interactive map. 
 
 
 
-API 
+API Tests
 1. GET /api/routes
 Returns a list of all bus routes offered in Georgia.
 
